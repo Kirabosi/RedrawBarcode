@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>RedrawBarcode</title>
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/jquery-barcode.min.js"></script>
+		<script src="js/redraw.js"></script>
+	</head>
+	<body>
+		<section>
+			<p class="label">バーコードの値：</p><input id="code" type="text" /><br />
+			<p class="label">幅：</p><input id="width" type="text" /><br />
+			<p class="label">高さ：</p><input id="height" type="text" /><br />
+			<input id="crc" type="checkbox" value="checked" />チェックデジット<br />
+			<label for="type">バーコードの種類：</label>
+			<select name="type" id="type">
+				<option value="codabar">codabar</option>
+				<option value="code11">code 11</option>
+				<option value="code39">code 39</option>
+				<option value="code93">code 93</option>
+				<option value="code128">code 128</option>
+				<option value="ean8">ean 8</option>
+				<option value="ean13">ean 13</option>
+				<option value="std25">standard 2 of 5 - industrial 2 of 5</option>
+				<option value="int25">interleaved 2 of 5</option>
+				<option value="msi">msi</option>
+				<option value="datamatrix">QRコード</option>
+			</select><br />
+			<input type="button" onclick="createBarcode()" value="バーコード生成" />
+			<div id="output"></div>
+		</section>
+	</body>
+</html>
