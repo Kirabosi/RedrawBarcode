@@ -20,6 +20,4 @@ function createBarcode() {
 	} else {
 		$("#output").barcode(code, type, {barWidth: width, barHeight: height});
 	}
-
-//	$("#output").barcode(code, type, {barWidth:width, barHeight:height});
 }
