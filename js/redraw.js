@@ -1,9 +1,9 @@
 function createBarcode() {
 	var code,
-		type,
-		crc,
-		width,
-		height;
+	    type,
+	    crc,
+	    width,
+	    height;
 	
 	code = $('#code').val();
 	type = $('#type option:selected').val();
