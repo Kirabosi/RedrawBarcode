@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 		<title>RedrawBarcode</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 		<script src="js/jquery-2.1.1.min.js"></script>
 		<script src="js/jquery-barcode.min.js"></script>
 		<script src="js/redraw.js"></script>
 	</head>
 	<body>
 		<section>
-			<p class="label">バーコードの値：</p><input id="code" type="text" /><br />
-			<p class="label">幅：</p><input id="width" type="text" value="1" /><br />
-			<p class="label">高さ：</p><input id="height" type="text" value="50" /><br />
-			<input id="crc" type="checkbox" value="checked" />チェックデジット<br />
-			<label for="type">バーコードの種類：</label>
+			<p>バーコードの値<input id="code" type="text" /></p><br />
+			<p>幅　<input id="width" type="text" pattern="[0-9]*" value="1" />高さ　<input id="height" type="text" pattern="[0-9]*" value="50" /></p><br />
+			<p><input id="crc" type="checkbox" value="checked" />チェックデジット</p><br />
+			<label for="type">バーコードの種類</label>
 			<select name="type" id="type">
 				<option value="codabar">codabar</option>
 				<option value="code11">code 11</option>
@@ -27,7 +28,7 @@
 				<option value="msi">msi</option>
 				<option value="datamatrix">QRコード</option>
 			</select><br />
-			<input type="button" onclick="createBarcode()" value="バーコード生成" />
+			<input id="create" type="button" onclick="createBarcode()" value="バーコード生成" />
 			<div id="output"></div>
 		</section>
 	</body>
