@@ -43,13 +43,18 @@ input[type="text"], select {
 	font-size: 18rem;
 }
 
+select {
+	height: 2em;
+	margin-bottom: 0.5em;
+}
+
 input[type="checkbox"] {
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
 }
 
 input#width, input#height {
-	width: 50px;
+	width: 100px;
 }
 
 input#width {
@@ -76,5 +81,6 @@ input#create {
 
 #output {
 	margin: 0 auto;
+	padding-bottom: 100px;
 	text-align: center;
 }
