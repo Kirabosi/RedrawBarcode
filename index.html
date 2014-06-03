@@ -16,17 +16,17 @@
 			<p><input id="crc" type="checkbox" value="checked" />チェックデジット</p><br />
 			<label for="type">バーコードの種類</label>
 			<select name="type" id="type">
-				<option value="codabar">codabar</option>
-				<option value="code11">code 11</option>
-				<option value="code39">code 39</option>
-				<option value="code93">code 93</option>
-				<option value="code128">code 128</option>
-				<option value="ean8">ean 8</option>
-				<option value="ean13">ean 13</option>
-				<option value="std25">standard 2 of 5 - industrial 2 of 5</option>
-				<option value="int25">interleaved 2 of 5</option>
-				<option value="msi">msi</option>
-				<option value="datamatrix">QRコード</option>
+				<option value="codabar">Codabar(NW-7)</option>
+				<option value="code11">Code11</option>
+				<option value="code39">Code39</option>
+				<option value="code93">Code93</option>
+				<option value="code128">Code128</option>
+				<option value="ean8">JAN-8/EAN-8</option>
+				<option value="ean13">JAN-13/EAN-13</option>
+				<option value="std25">Standard 2 of 5(Industrial 2 of 5)</option>
+				<option value="int25">Interleaved 2 of 5(ITF)</option>
+				<option value="msi">MSI Code</option>
+				<option value="datamatrix">Data Matrix</option>
 			</select><br />
 			<input id="create" type="button" onclick="createBarcode()" value="バーコード生成" />
 			<div id="output"></div>
