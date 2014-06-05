@@ -16,8 +16,8 @@ function createBarcode() {
 		} else {
 			crc = false;
 		}
-		$("#output").barcode({code: code, crc: crc}, type, {barWidth: width, barHeight: height});
+		$('#output').barcode({code: code, crc: crc}, type, {barWidth: width, barHeight: height});
 	} else {
-		$("#output").barcode(code, type, {barWidth: width, barHeight: height});
+		$('#output').barcode(code, type, {barWidth: width, barHeight: height});
 	}
 }
