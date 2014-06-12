@@ -84,3 +84,17 @@ input#create {
 	padding-bottom: 100px;
 	text-align: center;
 }
+
+dt:before {
+	content: "■";
+}
+
+dt {
+	border-top: 1px solid #000000;
+}
+
+dd {
+	margin-left: 1em;
+	font-size: 90%;
+}
+
