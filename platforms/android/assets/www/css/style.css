@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/* 各要素の初期化 */
+html, body, div, h1, h2, h3, h4, h5, h6,
+p, ul, ol, li, dl, dt, dd, a, span {
+	margin: 0;
+	padding: 0;
+	font-family:
+		"メイリオ",
+		Meiryo,
+		"ヒラギノ角ゴ Pro W3",
+		"Hiragino Kaku Gothic Pro W3",
+		"ＭＳ Ｐゴシック",
+		"MS P Gothic",
+		Osaka,
+		sans-serif;
+	text-decoration: none;
+}
+
+html{
+	font-size: 6.25%;
+}
+
+body {
+	-webkit-text-size-adjust: 100%;
+	background-color: #f5f5dc;
+	font-size: 18px;   /* rem対応していないブラウザ用 */
+    font-size: 18rem;  /* 18px */
+}
+
+p {
+	margin: 5px 3px;
+}
+
+input[type="text"], select {
+	width: 99%;
+	height: 1.5em;
+	margin: 0 auto;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 18px;
+	font-size: 18rem;
+}
+
+select {
+	height: 2em;
+	margin-bottom: 0.5em;
+}
+
+input[type="checkbox"] {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+input#width, input#height {
+	width: 100px;
+}
+
+input#width {
+	margin-right: 15px;
+}
+
+input#create {
+	width: 100%;
+	margin: 15px auto;
+	padding: 10px 0;
+	background: -moz-linear-gradient(top,#A3A3A3 0%,#3B3B3B 50%,#242424 50%,#000);
+	background: -webkit-gradient(linear, left top, left bottom, from(#A3A3A3),color-stop(0.50, #3B3B3B),color-stop(0.50, #242424),to(#000));
+	color: #DDD;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border: 1px solid #000;
+	-moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5),inset 0px 0px 1px rgba(255,255,255,0.6);
+	-webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5),inset 0px 0px 1px rgba(255,255,255,0.6);
+	text-shadow: 0px -1px 0px rgba(000,000,000,1),0px 1px 0px rgba(255,255,255,0.2);
+	font-size: 18px;
+	font-size: 18rem;
+}
+
+#output {
+	margin: 0 auto;
+	padding-bottom: 100px;
+	text-align: center;
+}
+
+dt:before {
+	content: "■";
+}
+
+dt {
+	border-top: 1px solid #000000;
+}
+
+dd {
+	margin-left: 1em;
+	font-size: 90%;
+}
+
